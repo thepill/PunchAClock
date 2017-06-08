@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="@string/setting_category_accuracy_title">
+        <de.jbdevelop.punchaclock.ui.setting.MotionSensorDistancePreference
+            android:key="setting-motion-minDistance"
+            android:title="@string/setting_motionMinDistance_title"
+            android:summary="@string/setting_motionMinDistance_summary" />
+        <de.jbdevelop.punchaclock.ui.setting.MotionSensorIntervalPreference
+            android:key="setting-motion-minTime"
+            android:title="@string/setting_motionMinInterval_title"
+            android:summary="@string/setting_motionMinInterval_summary" />
+        <SwitchPreference
+            android:key="setting-wifi-monitoring"
+            android:title="@string/setting_wifiMonitor_title"
+            android:defaultValue="true"
+            android:summary="@string/setting_wifiMonitor_summary"/>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/setting_category_sync_title">
+    <SwitchPreference
+            android:key="setting-calendar-sync"
+            android:title="@string/setting_calSync_title"
+            android:defaultValue="false"
+            android:summary="@string/setting_calSync_summary"/>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/setting_category_app_title">
+    <SwitchPreference
+        android:key="setting-service"
+        android:title="@string/setting_service_title"
+        android:defaultValue="true"
+        android:summary="@string/setting_service_summary"
+        />
+    <Preference
+        android:enabled="true"
+        android:key="setting-version"
+        android:title="Version"
+        android:summary="" />
+    </PreferenceCategory>
+</PreferenceScreen>

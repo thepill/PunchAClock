@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--INTRO TEXTS-->
+    <string name="intro_first_slide_description">Diese App hilft dir dabei, deine Zeiten an bestimmten Orten zu protokollieren.</string>
+    <string name="intro_location_permission_title">Standort</string>
+    <string name="intro_location_permission_description">PunchAClock benötigt Zugriff auf deinen Standort um ordnungsgemäß zu funktionieren.</string>
+    <string name="intro_calendar_title">Kalender</string>
+    <string name="intro_calendar_description">PunchAClock kann Einträge in einem eigenen Kalender erstellen. Diese Funktion kann später in den Einstellungen aktiviert werden.</string>
+    <string name="intro_finish_title">Los gehts</string>
+    <string name="intro_finish_description">Füge deinen ersten überwachten Bereich hinzu.</string>
+
+    <!--Menus-->
+    <!--Menus Title-->
+    <string name="menu_main_settings">"Einstellungen"</string>
+
+    <!--Settings-->
+    <!--Settings Category-->
+    <string name="setting_category_accuracy_title">"Genauigkeit"</string>
+    <string name="setting_category_sync_title">"Synchronisierung"</string>
+    <string name="setting_category_app_title">"Anwendung"</string>
+
+    <!--Settings Title-->
+    <string name="setting_motionMinDistance_title">"Bewegungsmonitor Mindestabstand"</string>
+    <string name="setting_motionMinInterval_title">"Bewegungsmonitor Prüfintervall"</string>
+    <string name="setting_wifiMonitor_title">"Wlan-Erkennung"</string>
+    <string name="setting_calSync_title">"Kalender Synchronisierung"</string>
+    <string name="setting_service_title">"Dienst"</string>
+    <!--Settings Summary-->
+    <string name="setting_motionMinDistance_summary">"Der Bewegungssensor prüft ständig die Bewegungen des Gerätes. Durch diesen Wert wird der Bewegungssensor temporär ignoriert, solange der Abstand der aktuellen Position zum nächsten Bereich höher ist."</string>
+    <string name="setting_motionMinInterval_summary">"Das Intervall in welchem der Bewegungssensor abgefragt wird, hängt von diversen Umständen ab. Dieser Wert definirt ein Mindestintervall"</string>
+    <string name="setting_wifiMonitor_summary">"Der Wlan-Status deines Gerätes wird genutzt, um das Betreten oder Verlassen eines Bereiches zu erkennen. Neue Wlan-Informationen werden in der lokalen Datenbank gespeichert (Keine Passwörter)."</string>
+    <string name="setting_calSync_summary">"Nach dem Verlassen eines bekannten Bereiches, wird ein Eintrag im PunchAClock Kalender erstellt. "</string>
+    <string name="setting_service_summary">"Der Dienst stellt die Kernfunktionalität dieser App dar. Wird dieser deaktivert, kann keine Ortung des Standortes erfolgen. Die App ist weiterhin im lesenden Zugriff verwendbar."</string>
+    <!--Settings Details-->
+    <string name="setting_motionMinDistance_detail">"Geringer Wert: \n\t\tBessere Genauigkeit \n\t\tHöherer Akkuverbrauch\nHöherer Wert: \n\t\tGeringere Genauigkeit \n\t\tGeringerer Akkuverbrauch\n\nStandard: 1000 m"</string>
+    <string name="setting_motionMinInterval_detail">"Geringer Wert: \n\t\tBessere Genauigkeit \n\t\tHöherer Akkuverbrauch\nHöherer Wert: \n\t\tGeringere Genauigkeit \n\t\tGeringerer Akkuverbrauch\n\nStandard: 60 s"</string>
+
+
+    <!--Activities-->
+    <!--MainActivity-->
+    <string name="activity_main_service_disabledHint">"Dienst ist deaktivert"</string>
+    <!--AddAreaActivit-->
+    <string name="activity_addAdrea_search_notfound">"Keine Adresse gefunden für "</string>
+    <string name="activity_addAdrea_area_new_enterName">"Gib einen Namen ein"</string>
+    <string name="activity_addAdrea_search_bar_hint">"Suche"</string>
+    <!--TimeperiodListActivity-->
+    <string name="activity_timeperiodList_noentries">"Dieser Bereich wurde (zu diesem Zeitpunkt) noch nicht betreten"</string>
+    <string name="activity_timeperiodList_datefilter_default">" Alle Einträge"</string>
+
+    <!--AreaSettingsActivity-->
+    <string name="activity_areaSettings_prop_wifiMonitor">"Wlan erkennen"</string>
+    <string name="activity_areaSettings_prop_wifi_summary">"Nutze den Wlan-Status deines Gerätes für die Erkennung dieses Bereiches."</string>
+    <string name="activity_areaSettings_prop_enabled">"Aktiviert"</string>
+    <string name="activity_areaSettings_prop_radius_summary">"Setze den überwachten Radius, ausgehend des Mittelpunktes, für diesen Bereich."</string>
+    <string name="activity_areaSettings_action_delete_confirmHint">"Möchtest du den Bereich %s wirklich löschen?"</string>
+    <string name="activity_areaSettings_action_delete_confirmTitle">"Bestätigung"</string>
+    <string name="activity_areaSettings_action_delete_confirmButton_positiv">"Ja"</string>
+    <string name="activity_areaSettings_action_delete_confirmButton_negativ">"Nein"</string>
+
+
+
+
+</resources>

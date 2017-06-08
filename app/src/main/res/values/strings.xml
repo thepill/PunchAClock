@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">PunchAClock</string>
+
+    <!--INTRO TEXTS-->
+    <string name="intro_first_slide_title">Punch A Clock</string>
+    <string name="intro_first_slide_description">This App helps you to track the time you spend in places.</string>
+    <string name="intro_location_permission_title">Location</string>
+    <string name="intro_location_permission_description">PunchAClock needs access to your location to work properly.</string>
+    <string name="intro_calendar_title">Calendar</string>
+    <string name="intro_calendar_description">PunchAClock can create entries in its own calendar.\nThis feature can be activated later in the settings.</string>
+    <string name="intro_finish_title">Get Started</string>
+    <string name="intro_finish_description">Add your first tracked location</string>
+
+    <!--Menus-->
+    <!--Menus Title-->
+    <string name="menu_main_settings">"Settings"</string>
+    <string name="menu_main_export">"Export"</string>
+
+    <!--Settings-->
+    <!--Settings Category-->
+    <string name="setting_category_accuracy_title">"Accuracy"</string>
+    <string name="setting_category_sync_title">"Synchronization"</string>
+    <string name="setting_category_app_title">"Application"</string>
+    <!--Settings Title-->
+    <string name="setting_motionMinDistance_title">"Motion Sensor sleep distance"</string>
+    <string name="setting_motionMinInterval_title">"Motion Sensor check interval"</string>
+    <string name="setting_wifiMonitor_title">"Wifi Monitoring"</string>
+    <string name="setting_calSync_title">"Calendar Synchronization"</string>
+    <string name="setting_service_title">"Service"</string>
+    <!--Settings Summary-->
+    <string name="setting_motionMinDistance_summary">"The motion sensor is always monitoring your movement. If the distance between the current location and the nearest area is higher than this value the motion sensor will partially send to sleep."</string>
+    <string name="setting_motionMinInterval_summary">"The interval in which the motion sensor will be monitored depends on certain circumstances. This value determines the minimum interval."</string>
+    <string name="setting_wifiMonitor_summary">"The state of your devices wifi connection will be used to detect changes of your position/area. New wifi information will be added to the local database (no secrets)."</string>
+    <string name="setting_calSync_summary">"When leaving an area, a new entry in the PunchAClock calendar will be added."</string>
+    <string name="setting_service_summary">"The core component of this app. If disabled, no location will be tracked. You can still use this app in readonly mode."</string>
+    <!--Settings Details-->
+    <string name="setting_motionMinDistance_detail">"Lower value: \n\t\thigher accuracy \n\t\thigher battery \nHigher value: \n\t\tlower accuracy \n\t\tlower battery impact\n\ndefault: 1000 m"</string>
+    <string name="setting_motionMinInterval_detail">"Lower value: \n\t\thigher accuracy \n\t\thigher battery \nHigher value: \n\t\tlower accuracy \n\t\tlower battery impact\n\ndefault: 60 s"</string>
+
+    <!--Activities-->
+    <!--Activitiy Titles-->
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_area_list">AreaList</string>
+    <string name="title_activity_time_period">TimePeriodActivity</string>
+    <string name="title_activity_area_detail">AreaDetail</string>
+    <string name="title_activity_debug_map">DebugMap</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_debug_event_bus">DebugEventBus</string>
+    <string name="title_activity_main">PunchAClock</string>
+    <!--MainActivity-->
+    <string name="activity_main_service_disabledHint">"Service is disabled"</string>
+    <!--AddAreaActivity-->
+    <string name="activity_addAdrea_search_notfound">"No addresses found for "</string>
+    <string name="activity_addAdrea_area_new_enterName">"Enter a name"</string>
+    <string name="activity_addAdrea_search_bar_hint">"Search"</string>
+    <!--TimeperiodListActivity-->
+    <string name="activity_timeperiodList_noentries">"Area not entered (at this time) yet"</string>
+    <string name="activity_timeperiodList_datefilter_default">" All Entries"</string>
+
+    <!--AreaSettingsActivity-->
+    <string name="activity_areaSettings_prop_name">"Name"</string>
+    <string name="activity_areaSettings_prop_wifiMonitor">"Monitor Wifi"</string>
+    <string name="activity_areaSettings_prop_wifi_summary">"Use your devices wifi state to track this area."</string>
+    <string name="activity_areaSettings_prop_enabled">"Enabled"</string>
+    <string name="activity_areaSettings_prop_radius">"Radius"</string>
+    <string name="activity_areaSettings_prop_radius_summary">"Set the tracked radius around the center of this area."</string>
+    <string name="activity_areaSettings_action_delete_confirmHint">"Are you sure you want to delete area %s?"</string>
+    <string name="activity_areaSettings_action_delete_confirmTitle">"Confirm"</string>
+    <string name="activity_areaSettings_action_delete_confirmButton_positiv">"Yes"</string>
+    <string name="activity_areaSettings_action_delete_confirmButton_negativ">"No"</string>
+    <string name="title_activity_import">ImportActivity</string>
+
+
+</resources>

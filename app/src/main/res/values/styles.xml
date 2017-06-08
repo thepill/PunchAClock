@@ -1,0 +1,21 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="PACTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+
+    <style name="PACTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="PACTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AreaSettingsTableRow">
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingBottom">3dp</item>
+    </style>
+
+</resources>

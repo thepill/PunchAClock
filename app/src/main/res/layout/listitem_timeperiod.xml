@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/in_time"
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:layout_width="20dp"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@+id/in_time"
+        android:id="@+id/arrow"
+        android:drawableStart="@drawable/ic_arrow_forward_black_24dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+    <TextView
+        android:id="@+id/out_time"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/arrow"
+        android:textAlignment="textEnd"
+        android:layout_marginEnd="40dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/duration_time"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:textAlignment="textEnd"
+        android:drawableEnd="@drawable/ic_access_time_black_24dp"
+        android:drawablePadding="4dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+</RelativeLayout>

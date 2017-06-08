@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/menu_main_option_debug_group"
+           android:visible="false">
+        <item android:title="Debug | Eventbus"
+              android:id="@+id/menu_main_option_debug_eventbus"/>
+        <item android:title="Debug | Map"
+              android:id="@+id/menu_main_option_debug_map"/>
+        <item android:title="Debug | Import"
+            android:id="@+id/menu_main_option_debug_import"/>
+    </group>
+    <item android:title="@string/menu_main_export"
+        android:id="@+id/menu_main_option_share"/>
+    <item android:title="@string/menu_main_settings"
+          android:id="@+id/menu_main_option_settings"/>
+</menu>

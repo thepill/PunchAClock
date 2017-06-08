@@ -1,0 +1,68 @@
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent" android:id="@+id/google_map"
+        tools:context=".ui.debug.map.DebugMapActivity"
+        android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:max="100"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/avgTime"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/seekBar"
+        android:layout_alignStart="@+id/seekBar"
+        android:layout_marginTop="10dp"
+        android:text="avgTime" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/biggestDelta"
+        android:layout_below="@+id/avgTime"
+        android:layout_alignLeft="@+id/avgTime"
+        android:layout_alignStart="@+id/avgTime"
+        android:layout_marginTop="5dp"
+        android:text="biggestDelta" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="show only current"
+        android:id="@+id/checkBox"
+        android:checked="false"
+        android:layout_below="@+id/numberOfUpdates"
+        android:layout_alignLeft="@+id/numberOfUpdates"
+        android:layout_alignStart="@+id/numberOfUpdates"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/numberOfUpdates"
+        android:layout_below="@+id/biggestDelta"
+        android:layout_alignLeft="@+id/biggestDelta"
+        android:layout_alignStart="@+id/biggestDelta"
+        android:layout_marginTop="5dp"
+        android:text="numberUpdates" />
+
+</RelativeLayout>

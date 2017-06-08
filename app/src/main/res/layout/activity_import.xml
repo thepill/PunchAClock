@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditText
+        android:lines="1"
+        android:hint="Paste csv data here"
+        android:id="@+id/debug_import_value"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp" />
+
+    <TextView
+        android:textColor="@color/red"
+        android:id="@+id/debug_import_override"
+        android:layout_below="@id/debug_import_value"
+        android:text="!All data will be overwritten!"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="50dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/debug_import_override"
+        android:layout_margin="16dp"
+        android:onClick="importData"
+        android:text="Import" />
+
+</RelativeLayout>

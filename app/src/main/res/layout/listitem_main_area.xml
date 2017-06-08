@@ -1,0 +1,71 @@
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/areaListItem"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingBottom="5dp"
+    >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spacingView">
+        <TextView
+            android:id="@+id/areaName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="areaName"
+            android:textSize="22sp"
+            android:layout_marginLeft="10dp"
+            android:gravity="start"
+            android:padding="2dp"
+            android:layout_gravity="center_vertical" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/inText"
+            android:text=" "
+            android:visibility="invisible"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@drawable/area_in_icon"
+            />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text=" "
+            android:visibility="invisible"
+            android:id="@+id/outText"
+            android:paddingLeft="5dp"
+            android:drawableLeft="@drawable/area_out_icon"
+            android:layout_marginRight="10dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>
+
