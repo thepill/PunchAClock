@@ -19,3 +19,13 @@ Download this app in the [Playstore](https://play.google.com/store/apps/details?
 `DEBUG_GOOGLE_GEO_API_KEY=<your_google_geo_api_key>`
 5. Open the project (or sync gradle).
 6. Run the app.
+
+
+## Creators
+
+[JPrest](https://github.com/jPrest)
+
+[thepill](https://github.com/thepill)
+
+
+
