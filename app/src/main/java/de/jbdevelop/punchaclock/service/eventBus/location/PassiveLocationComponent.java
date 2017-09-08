@@ -80,9 +80,16 @@ public class PassiveLocationComponent implements GoogleApiClient.ConnectionCallb
     }
 
     protected void startLocationUpdates() {
-        LocationServices.FusedLocationApi.requestLocationUpdates(googleApiClient, createLocationRequest(), this);
-        isActive = true;
-        PACLog.i(LOGCAT_TAG, "Started listening for passive location fixes");
+
+        try{
+            LocationServices.FusedLocationApi.requestLocationUpdates(googleApiClient, createLocationRequest(), this);
+            isActive = true;
+            PACLog.i(LOGCAT_TAG, "Started listening for passive location fixes");
+
+        }
+        catch (IllegalStateException ex){
+            PACLog.i(LOGCAT_TAG, "Exception thrown while starting passive location updates - returning");
+        }
     }
 
     protected void stopLocationUpdates(){
