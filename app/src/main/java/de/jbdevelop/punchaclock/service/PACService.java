@@ -18,6 +18,7 @@ import de.jbdevelop.punchaclock.helper.PACLog;
 import de.jbdevelop.punchaclock.helper.SettingsHelper;
 import de.jbdevelop.punchaclock.service.eventBus.area.AreaComponent;
 import de.jbdevelop.punchaclock.service.eventBus.calendar.CalendarSyncComponent;
+import de.jbdevelop.punchaclock.service.eventBus.location.GeofenceComponent;
 import de.jbdevelop.punchaclock.service.eventBus.location.PassiveLocationComponent;
 import de.jbdevelop.punchaclock.service.eventBus.wifi.WifiAreaComponent;
 import de.jbdevelop.punchaclock.service.eventBus.location.LocationComponent;
@@ -35,6 +36,7 @@ public class PACService extends Service {
     MotionComponent motionComponent;
     AreaComponent areaComponent;
     LocationComponent locationComponent;
+    GeofenceComponent geofenceComponent;
     PassiveLocationComponent passiveLocationComponent;
     WifiComponent wifiComponent;
     WifiAreaComponent wifiAreaComponent;
@@ -52,6 +54,7 @@ public class PACService extends Service {
         wifiComponent = new WifiComponent(this);
         areaComponent = new AreaComponent();
         locationComponent = new LocationComponent(this);
+        geofenceComponent = new GeofenceComponent(this);
         passiveLocationComponent =  new PassiveLocationComponent(this);
         wifiAreaComponent = new WifiAreaComponent(this);
         calendarSyncComponent = new CalendarSyncComponent(this);
