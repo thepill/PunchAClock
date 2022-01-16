@@ -56,7 +56,7 @@ dependencies {
     implementation 'org.greenrobot:eventbus:3.0.0'
     implementation 'com.evernote:android-job:1.0.4'
 
-    implementation group: 'org.achartengine', name: 'achartengine', version: '1.2.0'
+    //implementation group: 'org.achartengine', name: 'achartengine', version: '1.2.0'
     implementation 'com.mobsandgeeks:adapter-kit:0.5.3' // list sections
     implementation 'com.github.paolorotolo:appintro:4.1.0'
 }
